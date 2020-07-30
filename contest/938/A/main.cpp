@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 const string V = "aeiouy";
-#define is_vowel(s, k) (V.find(s[k]) != -1)
+#define is_vowel(s, k) ((int) V.find(s[k]) != -1)
 
 #define DEBUG 1 // change this to 0 to disable DEBUG mode
 #if DEBUG == 1
 #define DBG(x) do {cerr << #x << ": " << x << endl; } while (0)
-#else
+#elseju89ywhiuoj
 #define DBG(x)
 #endif
 

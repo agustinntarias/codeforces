@@ -1,20 +1,19 @@
-#include <bits/stdc++.h>
+#include<stdio.h>
 
-using namespace std;
-
-int main() {
-    int n, k, q;
-    scanf("%d%d", &n, &k);
-    q = k;
-    int x = 2, y, c=0;
-    while(k-- && x > 0) scanf("%d", &x);
-    if (x <= 0) printf("%d\n", q-k-2);
-    else {
-        y = x;
-        while(y == x) {
-            scanf("%d", &y);
-            c++;
-        }
-        printf("%d\n", c+q-1);
+int main()
+{
+    int n,k,a[50],sum=0,i;
+    scanf("%d%d",&n,&k);
+    for(i=0; i<n; i++)
+    {
+        scanf("%d",&a[i]);
     }
+    for(i=0; i<n; i++)
+    {
+        if(a[i]>=a[k-1]&&a[i]>0)
+            sum++;
+    }
+    printf("%d\n",sum);
+    return 0;
+
 }
